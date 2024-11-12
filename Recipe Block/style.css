@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.title-bar{
+    background-color: rgb(251, 73, 8,0.7);
+    color: white;
+    height: 3rem;
+    padding: 1rem 0 1rem 0;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.title-bar .icon{
+    width: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 28rem;
+    padding-left: 5rem;
+    
+}
+
+.icons{
+    opacity: 0.7;
+    cursor: pointer;
+    height: 1rem;
+}
+
+.icons:hover{
+    opacity: 1;
+    transform: scale(1.2);
+    transition: all 0.2s linear;
+}
+
+.navbar{
+    height: 3rem;
+    border-bottom: 1px solid rgb(6, 6, 6,0.1);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: orangered;
+    margin: 1rem 2rem 1.2rem 2rem;
+    font-size: 1.25rem;
+    opacity: 0.7;
+}
+.navbar a:hover{
+    opacity: 1;
+    transform: scale(1.2);
+    transition: all 0.1s linear;
+}
+
+.main-content{
+    padding: 2rem 5rem 2rem 5rem;
+    height: 30rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.img .title{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: orangered;
+}
+.img img{
+    margin: 1rem;
+    height: 80%;
+    width: 35rem;
+    margin-right: 2rem;
+}
+
+.steps{
+    
+    height: 90%;
+    width: 35rem;
+    padding: 2rem ;
+    border-radius: 1rem;
+    border-top: 1px solid rgb(6, 6, 6,0.2);
+    border-bottom: 1px solid rgb(6, 6, 6,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.steps ul h4{
+    font-size: 2rem;
+    text-align: center;
+    padding: 1.5rem;
+    color: orangered;
+}
+.steps ul li{
+    font-size: 1.75rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+}
+
+.containt1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containt1 ol h4{
+    font-size: 2rem;
+    text-align: center;
+    padding: 1.5rem;
+    color: orangered;
+}
+.containt1 ol li{
+    font-size: 1.75rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+}
+
+.footer{
+    height: 5rem;
+    border-top: 1px solid rgb(6, 6, 6,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer i{
+    font-size: 1.75rem;
+    margin-left: 2rem;
+    color: orangered;
+}
