@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.navbar{
+    border-bottom: 1px solid rgb(128, 128, 128,0.15);
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(10px);
+    
+}
+
+.navbar-cont1{
+    margin: 1rem 2rem 1rem 2rem;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-cont1 img{
+    height: 3.75rem;
+    margin-left: 0.2rem;
+}
+.navbar-cont2{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-cont2 a{
+    text-decoration: none;
+    color: #000;
+    opacity: 1;
+    font-weight: 700;
+}
+.navbar-cont2 a:hover{
+    opacity: 0.7;
+    /* transform: scale(1.2); */
+    transition: all 0.2s linear;
+}
+
+.navbar-cont3{
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem 2rem 1rem 2rem;
+    cursor: pointer;
+
+}
+.navbar-cont3 i{
+    margin-left: 1rem;
+    opacity: 0.7;
+    
+}
+.navbar-cont3 i:hover{
+    opacity: 1;
+    transform: scale(1.2);
+    transition: all 0.2s linear;
+}
+.navbar-cont3 select{
+    border: none;
+    background-color: transparent;
+}
+
+.navbar-cont3 select option{
+    border: none;
+    size: 25px;
+}
+
+.main-containt{
+    
+    background-color: rgb(128, 128, 128,0.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 2.5rem 3.25rem;
+    border-radius: 2rem;
+    width: 90%;
+}
+
+.images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+.images .main-img img{
+    height: 90%;
+    border-radius: 2rem;
+}
+
+.images .small-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+  
+}
+
+.images .small-img img{
+    border-radius: 1rem;
+    height: 4.25rem;
+    cursor: pointer;
+}
+.information{
+/* background-color: antiquewhite; */
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
+padding: 2rem;
+width: 50%;
+}
+
+.pro-title{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+margin: 0 0 2rem 0;
+}
+
+.pro-title #title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.pro-title .pro-price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0.25rem;
+    
+   
+}
+#s-p{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+#m-p{
+    text-decoration: line-through;
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+#discount{
+    background-color: red;
+    padding: 0.25rem;
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    color: white;
+    font-weight: 600;
+}
+.pro-info{
+    width: 100%;
+    border-top: 1px solid rgb(0, 0, 0,0.1);
+    padding: 1rem 0.5rem;
+}
+.pro-info p{
+    font-size: 1.25rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    opacity: 0.7;
+       
+}
+.pro-addcart{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgb(0, 0, 0,0.1);
+    padding: 2rem 1rem;
+    margin: 1rem;
+    font-weight: 700;
+}
+.qty{
+    display: flex;
+    align-items: center;
+}
+.qty i{
+    margin:1rem;
+    color: gray;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+.pro-addcart #qty{
+    border: 1px solid black;
+    position: relative;
+    margin: 1rem 0;
+    height: 1.75rem;
+    width: 6rem;
+    border-radius: 2rem;
+}
+.pro-addcart input{
+    padding-left: 15px;
+}
+ #cartbtn{
+    height: 3rem;
+    width: 55%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    text-align: center;
+    background-color: rgb(0, 0, 0,0.8);
+    color: white;
+    border-radius: 2rem;
+    border: 1px solid;
+}
+
+.footer{
+    border-top: 1px solid rgb(0, 0, 0,0.1);
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+.footer p{
+   
+    font-size: 0.75rem;
+}
