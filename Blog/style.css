@@ -1,25 +1,27 @@
 *{
     margin: 0;
-    padding: 0 1rem;
+    padding: 0 ;
     font-family: "PT Sans Narrow", sans-serif;
     font-weight: 600;
     font-style: normal;
+    background-color: #f9f7f4;
 }
 
 
 .navbar{
     /* background-color: aqua; */
     display: flex;
-    padding: 1rem 2rem;
+
+    padding: 1rem 3rem 1rem 3rem;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 1400px;
+    width: 90%;
     height: 3.75rem;
 }
 .section1{
     height: 100%;
-    width: 30%;
+    width: 25%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,7 +35,9 @@
     color: #000;
     
 }
-
+.section2{
+    width: 25%;
+}
 
 .section2 img{
     height: 2rem;
@@ -41,7 +45,7 @@
 
 .section3{
     height: 100%;
-    width: 30%;
+    width: 25%;
     display: flex;
     justify-content: space-between;
     align-items: center;
