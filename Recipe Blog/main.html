@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipes: Have a Teste</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs6VUjCqZHDCA04XcphNVy6Twtsi-nRMABdQ&s">
+    <script src="https://kit.fontawesome.com/d6f95564af.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+    <i class="fa-solid fa-bars menuitems" id="menu"></i></label>
+    <label for="check">
+    <i class="fa-solid fa-xmark menuitems" id="cross"></i></label>
+    <div class="navbar">
+        <div class="nav-1">
+            <a href="main.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#recipes">Recipes</a>
+            <!-- <a href="">Explore</a> -->
+        </div>
+        <div class="nav-2">
+            <img src="data:image/png;base64,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" alt="Logo">
+        </div>
+        <div class="nav-3">
+            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href=""><i class="fa-regular fa-user"></i></a>
+           
+        </div>
+    </div>
+    <div class="main-conatiner" id="recipes">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyliYaBOVv1pglElwnI0qHeqkjRIK_AY5h0g&s" alt="Img">
+            <div class="title">Grandma's Apple Pie</div>
+            <a href="index.html">Explore...</a>
+        </div>
+
+        <div class="card">
+            <img src="https://www.allrecipes.com/thmb/ShOYX4-OQ4QV5rLGnx6f5C6cXkc=/364x242/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/9418683-03f422b120f542eba5aca343d4287c28.jpg" alt="Img">
+            <div class="title">Grandma's Cornbread Dressing</div>
+            <a href="">Explore...</a>
+        </div>
+
+        <div class="card">
+            <img src="https://www.allrecipes.com/thmb/KnQ4mlPG36AaaIyOIn7qG09CglU=/364x242/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/21261-yummy-sweet-potato-casserole-PreethiVenkatramAllrecipes-4x3-d4a57286ea07483fb0cc386f5def07a5.jpg" alt="Img">
+            <div class="title">Yummy Sweet Potato Casserole</div>
+            <a href="">Explore...</a>
+        </div>
+
+        <div class="card">
+            <img src="https://www.allrecipes.com/thmb/cK7GD1uP0sglDcdvp-SpqSn-Grg=/364x242/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/256288_Chef-Johns-Creamy-Corn-Pudding-4x3-serving-3ce3089add344987b9a1d8b782a8fc4d.jpg" alt="Img">
+            <div class="title">Chef John's Creamy Corn Pudding</div>
+            <a href="">Explore...</a>
+        </div>
+
+        <div class="card">
+            <img src="https://www.allrecipes.com/thmb/2MEK95xA6YHCvvLPKub57SGeAwk=/364x242/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/1656932_BestGreenBeanCasserole4x3-20b5e9313934489f805e33f4f751517d.jpg" alt="Img">
+            <div class="title">Best Green Bean Casserole</div>
+            <a href="">Explore...</a>
+        </div>
+
+        <div class="card">
+            <img src="https://www.allrecipes.com/thmb/IJa-w-CWsC36Vq3_JU7r4OmQr60=/364x242/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/1626611-846ccef70f7144d8aef69dc6082f5ed0.jpg" alt="Img">
+            <div class="title">Fresh Cranberry Sauce</div>
+            <a href="">Explore...</a>
+        </div>
+
+       
+    </div>
+
+    <div class="about" id="about">
+        <h2>About us</h2>
+        <h4>Who we are</h4>
+        <p>Home cooks are our heroes—it's as simple as that. Allrecipes is a community built by and for kitchen experts: The cooks who will dedicate the weekend to a perfect beef bourguignon but love the simplicity of a slow-cooker rendition, too. The bakers who labor over a showstopping 9-layer cake but will just as happily doctor boxed brownies for a decadent weeknight dessert. The entertainers who just want a solid snack spread, without tons of dirty dishes at the end of the night.
+
+            Most importantly, Allrecipes connects home cooks with their greatest sources of inspiration — other home cooks. We're the world's leading digital food brand, and that inspires us to do everything possible to keep our community connected. Sixty-million home cooks deserve no less.</p>
+        <h4>Our History</h4>
+        <p>Founded in 1997 as CookieRecipe.com, Allrecipes changed the food world by providing the tools to share recipes and cooking tips, while celebrating the expertise of home cooks online. Since then, Allrecipes has become the world's largest community-driven food brand, providing trusted resources to more than 60 million home cooks each month. 
+
+            Every day, cooks from around the world publish recipes and inspire one another through recipe photos, ratings, reviews, and videos. The combination of the Allrecipes community with our team of editorial and kitchen professionals provides authority found nowhere else on the internet and has turned the brand into an indispensable resource for cooks of all skill levels.
+            
+            You can connect with us and our 11M followers on social media, too. On TikTok, learn how you should store avocados or find out if air fryer coconut shrimp lives up to the hype. On Facebook, Pinterest, and X, browse easy weeknight meals and scour reviews of the world's best air fryers. Find photo-worthy dinner inspiration on Instagram. And on YouTube, cook along with Chef John, who serves up creative, new recipes weekly — alongside a few good laughs thanks to his well-timed puns. 
+            
+            If you own an Amazon Alexa or Google Assistant device, you'll find our recipes easily discoverable via Voice search.</p>
+         <h4>Allrecipes Magazine</h4>  
+         <p>The food industry's first large-scale digital-to-print brand extension, Allrecipes magazine launched in 2013. Now published six times a year, it reaches an audience of nearly 9 million. The magazine serves up a seasonal slice of recipes and real-cook wisdom from Allrecipes.com — along with the best of what's new from the greater food and cooking community (emerging trends, entertaining ideas, new products, and more). We aim for a mix of approachable inspiration and down-to-earth service in every issue.
+
+            A majority of the recipes in Allrecipes magazine start with creations shared by home cooks on Allrecipes.com. All are tested, tasted, refined, edited, and professionally photographed before they appear in the magazine. Our editors and contributors also research and write about entertaining, diverse cuisines, Allrecipes Allstars and other fascinating cooks, kitchen decor and organization, cooking gadgets and gear, culinary travel, health, special diets, nutrition, parenting, and pets. We incorporate the best advice from editors, testers, and the cooking community to make good recipes better, great recipes easier, and every day a little more delicious. Sign up for a subscription now.</p>
+        <h4>The Allrecipes Community</h4>
+        <p>The heart of Allrecipes is our community of home cooks who share their beloved family recipes, create new recipes, and photograph, rate, and review each other's recipes. Each week, more than 15 million registered members add more than 2,000 recipe ratings, 800 new recipe photos, and almost 200 new recipes to the site. And every minute of every day, 27 people are saving recipes they love or want to try later.</p> 
+
+    </div>
+    <div class="footer">
+        <i class="fa-brands fa-instagram icons"></i>
+        <i class="fa-brands fa-facebook icons"></i>
+        <i class="fa-brands fa-twitter icons"></i>
+        <i class="fa-brands fa-youtube icons"></i>
+    </div>
+</body>
+</html>
