@@ -6,7 +6,7 @@
 
 .navbar{
     /* background-color: rgb(238, 243, 243); */
-    height: 9rem;
+    height: 9.5rem;
     border-bottom: 1px solid rgb(0, 0, 0,0.1);
 }
 .nav1{
@@ -26,11 +26,23 @@
     border-left: 1px solid rgb(233, 230, 230,0.6);
     margin: 0 0.5rem;
 }
-.nav1 p{
-   
-}
+
 .nav2{
     height: 75%;
-    background-color: aqua;
-    
+    /* background-color: aqua; */
+
+}
+.nav2 .sub1{
+height: 65%;
+/* background-color: aquamarine; */
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 0 3rem;
+align-items: center;
+}
+
+.nav2 .sub2{
+    height: 35%;
+    background-color: black;
 }
